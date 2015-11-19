@@ -1,0 +1,30 @@
+{
+  "name": "jalalify",
+  "version": "1.0.0",
+  "description": "Detects and converts dates in the input stream from Gregorian to Jalali and vice versa.",
+  "main": "jalalify.js",
+  "preferGlobal": true,
+  "bin": {
+    "jalalify": "./jalalify.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soheilpro/jalalify.git"
+  },
+  "keywords": [
+    "gregorian",
+    "jalali"
+  ],
+  "author": "Soheil Rashidi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/soheilpro/jalalify/issues"
+  },
+  "homepage": "https://github.com/soheilpro/jalalify#readme",
+  "dependencies": {
+    "optimist": "^0.6.1"
+  }
+}
