@@ -13,7 +13,7 @@ npm install -g jalalify
 jalalify [-x] [-f <format>]
 ```
 
-Default format is YYYY-M-D.
+The default format is YYYY-M-D.
 
 ## Example
 
@@ -45,15 +45,19 @@ echo -n 'I was born on April 1, 1982.' | jalalify -f 'MMMM D, YYYY'
 ```
 
 ## Format Specifiers
-| Specifier | Example | Description       |
-| --------- | ------- | ----------------- |
-| YYYY      | 1982    | 4 digit year      |
-| MMMM      | April   | Month name        |
-| MMM       | Apr     | Short month name  |
-| M         | 1       | Month number      |
-| D         | 1       | Day of month      |
+| Specifier | Example | Description              |
+| --------- | ------- | ------------------------ |
+| YYYY      | 1982    | 4-digit year             |
+| MMMM      | April   | Month name               |
+| MMM       | Apr     | Short month name         |
+| MM        | 01      | 2-digit month number     |
+| M         | 1       | Month number             |
+| DD        | 01      | 2-digit day of month     |
+| D         | 1       | Day of month             |
 
 ## Version History
++ **1.1**
+	+ Added support for MM and DD format specifiers.
 + **1.0**
 	+ Initial release.
 

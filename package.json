@@ -1,6 +1,6 @@
 {
   "name": "jalalify",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Detects and converts dates in the input stream from Gregorian to Jalali and vice versa.",
   "main": "jalalify.js",
   "preferGlobal": true,
