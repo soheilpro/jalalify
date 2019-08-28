@@ -89,6 +89,13 @@ function getFormatSpecifiers(sourceCulture, destinationCulture) {
     return value.toString();
   }
 
+  function toPaddedString(value) {
+    if (value < 10)
+      return '0' + value.toString();
+
+    return value.toString();
+  }
+
   // TODO: YY
 
   return {
@@ -110,11 +117,23 @@ function getFormatSpecifiers(sourceCulture, destinationCulture) {
       from: function(a) { return sourceCulture.shortMonthNames().indexOf(a) + 1 },
       to: function(a) { return destinationCulture.shortMonthNames()[a - 1] }
     },
+    'MM': {
+      part: 1,
+      regex: '(\\d{1,2})',
+      from: parse,
+      to: toPaddedString
+    },
     'M': {
       part: 1,
       regex: '(\\d{1,2})',
       from: parse,
       to: toString
+    },
+    'DD': {
+      part: 2,
+      regex: '(\\d{1,2})',
+      from: parse,
+      to: toPaddedString
     },
     'D': {
       part: 2,
